@@ -1,0 +1,68 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/bluehige/GamePlanner/schemas/incident.schema.json",
+  "title": "GamePlanner Incident Metadata",
+  "type": "object",
+  "required": [
+    "incident_id",
+    "title",
+    "status",
+    "severity",
+    "occurred_at"
+  ],
+  "properties": {
+    "incident_id": {
+      "type": "string",
+      "pattern": "^INC-[0-9]{4}-[0-9]{4}$"
+    },
+    "title": {
+      "type": "string",
+      "minLength": 1
+    },
+    "status": {
+      "enum": [
+        "draft",
+        "reproduced",
+        "root-caused",
+        "fixed",
+        "verified",
+        "rule-candidate",
+        "active-rule",
+        "closed",
+        "superseded"
+      ]
+    },
+    "severity": {
+      "enum": [
+        "minor",
+        "major",
+        "critical"
+      ]
+    },
+    "occurred_at": {
+      "type": "string",
+      "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}$"
+    },
+    "engine": {
+      "type": "string"
+    },
+    "branch": {
+      "type": "string"
+    },
+    "baseline_sha": {
+      "type": "string"
+    },
+    "fixed_sha": {
+      "type": "string"
+    },
+    "build_id": {
+      "type": "string"
+    },
+    "tags": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  }
+}

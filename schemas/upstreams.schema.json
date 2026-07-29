@@ -1,0 +1,73 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "GamePlanner Upstream Lock",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "resolved_at",
+    "policy",
+    "upstreams"
+  ],
+  "properties": {
+    "schema_version": {
+      "type": "string"
+    },
+    "resolved_at": {
+      "type": "string"
+    },
+    "policy": {
+      "type": "string"
+    },
+    "upstreams": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "stage",
+          "url",
+          "ref",
+          "license",
+          "integration",
+          "role"
+        ],
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "stage": {
+            "type": "string"
+          },
+          "repository": {
+            "type": "string"
+          },
+          "url": {
+            "type": "string"
+          },
+          "ref": {
+            "type": "string"
+          },
+          "license": {
+            "type": "string"
+          },
+          "integration": {
+            "type": "string"
+          },
+          "required": {
+            "type": "boolean"
+          },
+          "components": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "role": {
+            "type": "string"
+          }
+        }
+      }
+    }
+  }
+}

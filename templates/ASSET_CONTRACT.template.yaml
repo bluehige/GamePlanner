@@ -1,0 +1,41 @@
+asset_id: ENV-EXAMPLE-001
+name: example_asset
+category: environment
+status: draft
+
+gameplay_role:
+  purpose: ""
+  importance: secondary
+
+presentation:
+  camera: ""
+  expected_screen_size_px: ""
+  silhouette: ""
+  palette_role: ""
+  lighting: ""
+  forbidden: []
+
+technical:
+  world_scale_m: [1.0, 1.0, 1.0]
+  origin: bottom-center
+  pivot: placement-base
+  collision: simplified
+  variants: 1
+  lod: []
+  texture_size: 1024
+  material_slots_max: 1
+  export: glb
+
+integration:
+  engine_path: ""
+  naming_rule: ""
+  import_profile: ""
+
+provenance:
+  source_type: original
+  references: []
+  prompt_ref: ""
+  generator_and_version: ""
+
+acceptance_criteria: []
+verification_level_required: V3
