@@ -1,0 +1,179 @@
+{
+  "schema_version": "1.0",
+  "resolved_at": "2026-07-29",
+  "policy": "reference-and-adapter; no vendored upstream content",
+  "upstreams": [
+    {
+      "id": "idea-diversity-engine",
+      "stage": "01",
+      "repository": "bluehige/idea-diversity-engine",
+      "url": "https://github.com/bluehige/idea-diversity-engine",
+      "ref": "449e1f1bfee448569eebd702bc7582428ee27f3f",
+      "license": "Apache-2.0",
+      "integration": "adapter",
+      "required": false,
+      "components": [
+        "verticals/game-design",
+        "verticals/visual-3d-design",
+        "verticals/software-qa"
+      ],
+      "role": "Generate mechanically distinct candidate portfolios before committing to one concept."
+    },
+    {
+      "id": "mattpocock-skills",
+      "stage": "02",
+      "repository": "mattpocock/skills",
+      "url": "https://github.com/mattpocock/skills",
+      "ref": "2ab958093e83e0ec752e6c1c5932da465bf23e0c",
+      "license": "MIT",
+      "integration": "adapter",
+      "required": false,
+      "components": [
+        "skills/productivity/grill-me",
+        "skills/productivity/grilling",
+        "skills/engineering/domain-modeling",
+        "skills/engineering/wayfinder"
+      ],
+      "role": "One-decision-at-a-time interview, domain terminology discipline, and multi-session decision maps."
+    },
+    {
+      "id": "spec-kit",
+      "stage": "05",
+      "repository": "github/spec-kit",
+      "url": "https://github.com/github/spec-kit",
+      "ref": "f04a36a62916217f7e32b18f9bc7902f9bfc1e4c",
+      "license": "MIT",
+      "integration": "adapter",
+      "required": false,
+      "components": [
+        "constitution",
+        "specify",
+        "plan",
+        "tasks",
+        "analyze"
+      ],
+      "role": "Maintain traceability from product rules to specifications, plans, tasks, and consistency checks."
+    },
+    {
+      "id": "bmad-game-dev-studio",
+      "stage": "05",
+      "repository": "bmad-code-org/bmad-module-game-dev-studio",
+      "url": "https://github.com/bmad-code-org/bmad-module-game-dev-studio",
+      "ref": "f51d4001e4c3947ccd177c83957aaaf9deb0ecb7",
+      "license": "MIT with trademark notice",
+      "integration": "adapter",
+      "required": false,
+      "components": [
+        "game brief",
+        "GDD",
+        "technical architecture",
+        "playtest",
+        "production planning"
+      ],
+      "role": "Supply game-specific planning checklists and document coverage."
+    },
+    {
+      "id": "game-ui-ux-rules",
+      "stage": "08",
+      "repository": "bluehige/UI_UX_Skill_for_Game",
+      "url": "https://github.com/bluehige/UI_UX_Skill_for_Game",
+      "ref": "e609d0d4401657bec4cad650e9981e1edd9305df",
+      "license": "MIT",
+      "integration": "direct-skill-bridge",
+      "required": false,
+      "components": [
+        "game-ui-ux-director",
+        "game-ui-ux-project-builder"
+      ],
+      "role": "Design and verify screen contracts, interaction, accessibility, and evidence."
+    },
+    {
+      "id": "agent-sprite-forge-codex-skill",
+      "stage": "10",
+      "repository": "jay6697117/agent-sprite-forge-codex-skill",
+      "url": "https://github.com/jay6697117/agent-sprite-forge-codex-skill",
+      "ref": "fe324af8600bb13c1855394de2e5aec2c50179c9",
+      "license": "MIT",
+      "integration": "tool-adapter",
+      "required": false,
+      "components": [
+        "generate2dsprite",
+        "generate2dmap"
+      ],
+      "role": "Generate and deterministically post-process 2D sprites and layered map assets."
+    },
+    {
+      "id": "engine-export-bridge",
+      "stage": "10",
+      "repository": "bluehige/blender_exprorter_for_Engine",
+      "url": "https://github.com/bluehige/blender_exprorter_for_Engine",
+      "ref": "c8e23ae04d5982dcd9dfafc807f55ada0de0b477",
+      "license": "GPL-3.0-or-later",
+      "integration": "tool-adapter",
+      "required": false,
+      "components": [
+        "Blender 4.5.4-5.2 export presets",
+        "Godot",
+        "Unity",
+        "Unreal"
+      ],
+      "role": "Prepare and export 3D assets with engine-oriented manifests and non-destructive processing."
+    },
+    {
+      "id": "superpowers",
+      "stage": "12",
+      "repository": "obra/superpowers",
+      "url": "https://github.com/obra/superpowers",
+      "ref": "44c9b2d6e889982ac18c27d05a19fefe335194e1",
+      "license": "MIT",
+      "integration": "workflow-adapter",
+      "required": false,
+      "components": [
+        "writing-plans",
+        "test-driven-development",
+        "systematic-debugging",
+        "verification-before-completion",
+        "code-review"
+      ],
+      "role": "Enforce disciplined implementation, testing, review, and fresh verification evidence."
+    },
+    {
+      "id": "awesome-gamedev-agent-skills",
+      "stage": "12",
+      "repository": "gamedev-skills/awesome-gamedev-agent-skills",
+      "url": "https://github.com/gamedev-skills/awesome-gamedev-agent-skills",
+      "ref": "01b3eb41b359a6386e7d27c8a704baaa2a2fcfd9",
+      "license": "Apache-2.0",
+      "integration": "knowledge-pack-adapter",
+      "required": false,
+      "components": [
+        "engine",
+        "genre",
+        "gameplay",
+        "shipping"
+      ],
+      "role": "Load only the engine and game-domain skills needed by the active Work Order."
+    },
+    {
+      "id": "karpathy-llm-wiki",
+      "stage": "17",
+      "repository": "gist:karpathy/442a6bf555914893e9891c11519de94f",
+      "url": "https://gist.github.com/karpathy/442a6bf555914893e9891c11519de94f",
+      "ref": "revision-1-created-2026-04-04",
+      "license": "No explicit license; concept reference only",
+      "integration": "concept-only",
+      "required": false,
+      "components": [
+        "raw sources",
+        "wiki",
+        "schema",
+        "ingest",
+        "query",
+        "lint",
+        "index",
+        "log"
+      ],
+      "role": "Provide the persistent, compounding Wiki pattern used by game-dev-memory."
+    }
+  ]
+}

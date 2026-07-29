@@ -1,0 +1,37 @@
+{
+  "name": "game-planner",
+  "version": "0.1.0",
+  "description": "Numbered game production skills for planning, implementation, verification, memory, and release.",
+  "author": {
+    "name": "bluehige",
+    "url": "https://github.com/bluehige"
+  },
+  "homepage": "https://github.com/bluehige/GamePlanner",
+  "repository": "https://github.com/bluehige/GamePlanner",
+  "license": "MIT",
+  "keywords": [
+    "game-development",
+    "game-design",
+    "agent-skills",
+    "playtest",
+    "llm-wiki"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "GamePlanner",
+    "shortDescription": "게임 기획부터 출시까지 번호화된 제작 스킬",
+    "longDescription": "게임의 핵심 기획 질답, 프로토타입, 작업 계약, 영향 분석, UI·아트·밸런스·엔진 구현, 검증, 플레이테스트, 개발 Wiki와 출시 판단을 실제 사용 순서로 연결합니다.",
+    "developerName": "bluehige",
+    "category": "Developer Tools",
+    "capabilities": [
+      "Read",
+      "Write"
+    ],
+    "websiteURL": "https://github.com/bluehige/GamePlanner",
+    "defaultPrompt": [
+      "Use GamePlanner to determine the correct production stage before changing this game.",
+      "Use GamePlanner to turn this request into a verified game-development work order."
+    ],
+    "brandColor": "#334155"
+  }
+}

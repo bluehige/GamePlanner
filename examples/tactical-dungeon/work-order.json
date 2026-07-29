@@ -1,0 +1,50 @@
+{
+  "work_order_id": "WO-2026-0001",
+  "request_summary": "전술 던전 배치 화면을 단순화한다",
+  "raw_request_ref": "example-session-001",
+  "interpreted_goal": {
+    "player_outcome": "초회 플레이어가 한 화면에서 유닛 배치를 완료한다",
+    "system_outcome": "기존 전투 공식과 몬스터 데이터는 유지한다"
+  },
+  "source_of_truth": [
+    "docs/foundation/GAME_CONTRACT.md",
+    "baseline-sha:abc1234"
+  ],
+  "in_scope": [
+    "배치 화면 정보 계층",
+    "마우스와 게임패드 확정 흐름",
+    "배치 성공·실패 피드백"
+  ],
+  "out_of_scope": [
+    "몬스터 능력치",
+    "전투 공식",
+    "저장 스키마"
+  ],
+  "forbidden_changes": [
+    "몬스터 ID 삭제",
+    "전투 결과 계산 변경"
+  ],
+  "acceptance_criteria": [
+    "지원 입력으로 배치부터 전투 시작까지 완주할 수 있다",
+    "기준 시나리오의 전투 결과가 동일하다",
+    "1280x720에서 필수 정보가 잘리지 않는다"
+  ],
+  "affected_systems": [
+    "placement-ui",
+    "input-routing",
+    "combat-start"
+  ],
+  "verification": [
+    "UI 계약 정적 검사",
+    "Godot 실제 렌더와 마우스·게임패드 입력",
+    "기존 전투 기준 시나리오 회귀"
+  ],
+  "risk_tier": "medium",
+  "rollback": {
+    "baseline_sha": "abc1234",
+    "strategy": "기능 branch의 커밋을 되돌리고 기준 UI 씬을 복원한다"
+  },
+  "assumptions": [
+    "기준 전투 데이터가 baseline SHA에 고정되어 있다"
+  ]
+}
